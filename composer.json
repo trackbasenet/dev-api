@@ -1,0 +1,21 @@
+{
+	"name": "trackbasenet/dev-api",
+	"type": "library",
+	"description": "TrackBase API Connector Class that makes making calls to TrackBase as easy as two lines of code.",
+	"homepage": "https://github.com/trackbasenet/dev-api",
+	"authors": [
+		{
+			"name": "JoNny",
+			"email": "jonny@trackbase.net",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"php": ">=7.1"
+	},
+	"autoload": {
+		"psr-4": {
+			"TrackBaseNet\\": "src/TrackBaseNet/"
+		}
+	}
+}
