@@ -424,7 +424,7 @@ $requestErrorMessage = $api->ranklist()->getError();
 
 ### getErrorCode
 
-This method returns the error code. This is extremely helpful for debugging purposes or when contacting us with an issue. For more details check the `[getError](#getError)` method.
+This method returns the error code. This is extremely helpful for debugging purposes or when contacting us with an issue. For more details check the [getError](#getError) method.
 
 ```php
 $requestErrorCode = $api->ranklist()->getErrorCode();
@@ -432,7 +432,7 @@ $requestErrorCode = $api->ranklist()->getErrorCode();
 
 ### hasErrors
 
-This method returns whether or not errors were returned. It can be used to see easily if the query was successful. For further checks you might want to use the `[countResults](#countResults)` method.
+This method returns whether or not errors were returned. It can be used to see easily if the query was successful. For further checks you might want to use the [countResults](#countResults) method.
 
 ```php
 $hasErrors = $api->ranklist()->hasErrors();
@@ -465,7 +465,7 @@ $results = $api->ranklist()->getResults();
 ```php
 $api = new \TrackBaseNet\TrackBaseApi($app_id, $relation_token, $_aak);
 
-$results = $api->serverSessions(['limit' => 5])->getResults();
+$results = $api->serverSessions(['sid' => 1234, 'limit' => 5])->getResults();
 ```
 
 ### Receiving and showing a specific player name in HTML format
